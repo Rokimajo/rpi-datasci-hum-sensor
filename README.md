@@ -24,3 +24,8 @@ But there is a catch. If the humidity outside is higher than inside, this will o
 So, the plan is this:
 - Create a humidity measurement system so that I know when the humidity levels are too high, and I can go to my room to open a window.
 - Use a Weather API to get the outside humidity of my location, and compare this to my room's humidity, if the humidity outside is greater, don't open your window. 
+
+## The Process
+First I had to know the humidity breakpoint where I would be in the "danger zone". I looked at alot of sources, and I found one that had a handy chart for alot of temperature levels, which has an impact on mold growth. The approximate point where risk would begin between all these temperatures would be a low 65% relative humidity level.
+> source on chart: https://energyhandyman.com/knowledge-library/mold-chart-for-temperature-and-humidity-monitors/
+
