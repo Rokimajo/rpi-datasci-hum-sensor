@@ -1,4 +1,4 @@
-# rpi-datasci-measurements
+# rpi-datasci-hum-sensor
 
 ## Introduction
 This repository contains all the elements involving my Data Science IoT project. I will be explaining why I chose this project, some steps I took along the way of developing this project, a short demo looking at the end product, and a tutorial to follow along. This project will be using a **Raspberry Pi 4 Model B** with the **Sense HAT V2** addon and is coded using **Python 3.11**. 
