@@ -174,6 +174,9 @@ own_number = +0 # Your own number, where twilio sends the message to.
 Set send_sms to ```True``` if you're planning to send SMS messages to yourself, and fill all the fields with your own account information.
 After that, you're all done! You should now get SMS messages if your humidity passes your given breakpoint and it's not more humid outside.
 
+## Other Resources
+[My ThingSpeak Channel](https://thingspeak.com/channels/2108056)
+
 ### Reference List
 
 [^1]: https://www.raspberrypi.com/documentation/accessories/sense-hat.html
