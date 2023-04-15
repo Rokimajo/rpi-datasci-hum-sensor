@@ -112,7 +112,7 @@ Now your fields are all set up, you can go into the code and modify the fields y
 
 ```python
 # ThingSpeak
-ts_writekey = "" # the write key of your ThingSpeak channel
+ts_writekey = "key_here" # the write key of your ThingSpeak channel
 ts_channelid = 0 # ThingSpeak channel ID
 ```
 You can find your API Write Key under the ```API Keys``` tab in ThingSpeak:
@@ -135,8 +135,8 @@ After you've made an account, make sure you're on the dashboard page:
 As you can see the API key is right there, now simply copy your key and paste it in the right [hum_sensor.py](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) section:
 ```python
 # WeatherAPI.com
-weatherAPI_key = "" # The read key for WeatherAPI
-weatherAPI_city = "" # The city name where WeatherAPI will get your data from. i.e: "Rotterdam"
+weatherAPI_key = "key_here" # The read key for WeatherAPI
+weatherAPI_city = "city_here" # The city name where WeatherAPI will get your data from. i.e: "Rotterdam"
 ```
 Also don't forget to enter the city you want to get the data from.
 
@@ -166,8 +166,8 @@ Now, take note of your following account info, because you'll need to insert the
 # Twilio (Optional)
 send_sms = False # Enable whether you want to send sms messages to yourself. 
 				# Set this to false if you don't have Twilio or don't want to send messages.
-acc_SID = "" # Your Twilio account SID
-acc_AUTH = "" # Your twilio account Auth Token
+acc_SID = "SID_here" # Your Twilio account SID
+acc_AUTH = "AUTH_here" # Your twilio account Auth Token
 twilio_number = +0 # Your twilio phone number, find this in account info after making a trial account.
 own_number = +0 # Your own number, where twilio sends the message to.
 ```
