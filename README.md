@@ -140,7 +140,7 @@ weatherAPI_city = "city_here" # The city name where WeatherAPI will get your dat
 ```
 Also don't forget to enter the city you want to get the data from.
 
-Great! Now you're done. If you let [hum_sensor.py sends](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) run for a while, you should see something like this:
+Great! Now you're done. If you let [hum_sensor.py](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) run for a while, you should see something like this:
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226277-99062be6-8dc9-489a-b590-7e97ab565a01.PNG)
 
