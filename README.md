@@ -64,6 +64,7 @@ Apart from a few complications which I talked about in **The Process**, the proj
 
 ## Video Demo
 For the purposes of this demo, I've set the ```update_interval``` to **15** seconds and set the ```hum_breakpoint``` to **20%**. I also turned off the check that looks at the ```City Humidity (%)``` field, because during my testing the city's humidity was always around 60. 
+
 *Normally you will only get a push message if your local humidity is above your set breakpoint AND the city's humidity is lower than your local.*
 Hopefully this will show how this project is supposed to work if your local humidity is too high. Note: The lamp next to Field 4 turns bright green when you are supposed to open your window. 
 
