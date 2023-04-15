@@ -87,15 +87,15 @@ Now, create these four fields in this order and save the channel on the button b
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232225626-2b6871f6-2601-420c-a7e5-b4d3dffc4dc6.PNG)
 
-Now, for Fields **1-3** you should make these 3 widgets. Go to **Add Widget**:
+Now, for Fields **1-3** you should make these 3 widgets. Go to **Add Widgets**:
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232225744-f61e28c2-d613-4a98-83ea-f1109a219b2d.PNG)
 
-Click on Numeric Display:
+Click on **Numeric Display**:
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232225802-85bbaf0c-2b73-4129-bbf1-0ef77ed01eb2.PNG)
 
-For widgets 1, 2 and 3 enter the same name as the Channel Field name we gave them. (**Local Humidity (%), City Humidity (%), Difference (%)**)
+For widgets 1, 2 and 3 enter the same name as the Channel Field name we gave them. [**Local Humidity (%), City Humidity (%), Difference (%)**]
 Don't forget to make them an integer, because they're supposed to be whole percentages.
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232225966-09f42785-3f5f-4604-9d1e-5a0281042e6f.PNG)
@@ -108,7 +108,7 @@ And enter the following settings. This will make the lamp turn on when [hum_sens
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226161-5deae121-a306-4d7e-9c78-470a25ad2d85.PNG)
 
-Now your fields are all set up, you can go into the code and modify the fields you need:
+Now that your fields are all set up, you can go into the code and modify the fields you need:
 
 ```python
 # ThingSpeak
