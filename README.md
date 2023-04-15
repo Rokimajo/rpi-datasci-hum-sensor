@@ -1,7 +1,9 @@
 # rpi-datasci-hum-sensor :droplet:
 
 ## Introduction
-This repository contains all the elements involving my Data Science IoT project. I will be explaining why I chose this project, some steps I took along the way of developing this project, a short demo looking at the end product, and a tutorial to follow along. This project will be using a **Raspberry Pi 4 Model B** with the **Sense HAT V2** addon and is coded using **Python 3.9.2** alongside [ThingSpeak](https://thingspeak.com/) for data visualization and [Twilio](https://www.twilio.com/en-us) for SMS sending. 
+This repository contains all the elements involving my Data Science IoT project. The project is about measuring humidity in your local area (like a room) and getting the outside temperature with a weather API. The reason for the measurement will be to always have a healthy amount of humidity inside your area. If the humidity in your local area grows too large based on a breakpoint you choose (default: 65%), the program will light up a button on [ThingSpeak](https://thingspeak.com/) to notify you, and will also send push notifications per SMS if you opt-in for it.
+
+I will be explaining why I chose this project, some steps I took along the way of developing this project, a short demo looking at the end product, and a tutorial to follow along. This project will be using a **Raspberry Pi 4 Model B** with the **Sense HAT V2** addon and is coded using **Python 3.9.2** alongside [ThingSpeak](https://thingspeak.com/) for data visualization and [Twilio](https://www.twilio.com/en-us) for SMS sending. 
 
 ## Getting Started & My Project Idea
 I had to think of a small, easy to implement idea that involves a working IoT prototype, and involves a personal problem that I want to solve. The only IoT device that I had a bit of experience with was the Raspberry Pi, so naturally that was my first option. This Raspberry Pi doesn't have a whole lot of sensors on it's own, so luckily mine came with the SenseHAT addon. This SenseHAT comes with several sensors[^1]:
@@ -16,7 +18,7 @@ I had to think of a small, easy to implement idea that involves a working IoT pr
 
 Next up was choosing one or more of these sensors to solve a personal problem I had. Most of these are irrelevant to my situation, I wouldn't have much personal use for a Gyroscope or Magnetometer. The one that jumped out to me was **Humidity**, and let me explain why.
 
-My room is on the highest floor, and sadly I have the problem of having quite a bit of humidity inside my room. This brings the annoying side effect of promoting mold growth if I don't watch this carefully. Luckily, I do have two windows that open on both sides, that can promote airflow and quickly get rid of this humidity.
+My room is on the highest floor, and sadly I have the problem of having quite a bit of humidity inside my room. This brings the annoying side effect of promoting mold growth if I don't watch this carefully, as this has been most prevalent around my window sills. Luckily, I do have two windows that open on both sides, that can promote airflow and quickly get rid of this humidity.
 But there is a catch. If the humidity outside is higher than inside, this will only worsen the effect[^2].
 
 So, the plan is this:
@@ -26,7 +28,7 @@ So, the plan is this:
 ## The Process
 First I had to know the humidity breakpoint where I would be in the "danger zone". I looked at alot of sources, and I found one[^3] that had a handy chart for alot of temperature levels, which has an impact on mold growth. The approximate point where risk would begin between all these temperatures would be a low 65% relative humidity level.
 
-Now I needed some way to get my local weather data because opening my window when the humidity is even worse outside, wouldn't help at all. After looking trough a couple API's, I found the site [WeatherAPI](https://www.weatherapi.com/), they offer you 1 million calls per month with a free account. Most other API's I found gave me only around 200-300 per day, WeatherAPI would give me considerably more.
+Now I needed some way to get my local weather data because opening my window when the humidity is even worse outside, wouldn't help at all. After looking trough a couple API's, I found the site [WeatherAPI](https://www.weatherapi.com/), they offer you 1 million calls per month with a free account. Most other API's I found gave me only around 200-300 per day. Seeing as WeatherAPI.com would give me considerably more, I chose them.
 
 ```python
 def get_weather_data():
