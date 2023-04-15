@@ -28,4 +28,7 @@ So, the plan is this:
 ## The Process
 First I had to know the humidity breakpoint where I would be in the "danger zone". I looked at alot of sources, and I found one that had a handy chart for alot of temperature levels, which has an impact on mold growth. The approximate point where risk would begin between all these temperatures would be a low 65% relative humidity level.
 > source on chart: https://energyhandyman.com/knowledge-library/mold-chart-for-temperature-and-humidity-monitors/
+Now I needed some way to get my local weather data because opening my window when the humidity is even worse outside, wouldn't help at all. After looking trough a couple API's, I landed at WeatherAPI.com because they offer you 1 million calls per month with a free account. Most other API's I found gave me only around 200-300 per day, WeatherAPI would give me considerably more.
+> WeatherAPI.com: https://www.weatherapi.com/
+
 
