@@ -32,4 +32,14 @@ First I had to know the humidity breakpoint where I would be in the "danger zone
 Now I needed some way to get my local weather data because opening my window when the humidity is even worse outside, wouldn't help at all. After looking trough a couple API's, I landed at WeatherAPI.com because they offer you 1 million calls per month with a free account. Most other API's I found gave me only around 200-300 per day, WeatherAPI would give me considerably more.
 > WeatherAPI.com: https://www.weatherapi.com/
 
-
+```
+def get_weather_data():
+	URL = f"http://api.weatherapi.com/v1/current.json?key={weatherAPI_key}&q={weatherAPI_city}&aqi=no"
+	response = requests.get(URL)
+	if response:
+		print(f"Response OK! Code: {response}")
+	else:
+		print(f"Error occurred. Code: {response}")
+	weather_data = response.json()["current"]["humidity"]
+	return weather_data
+ ```
