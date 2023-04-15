@@ -1,4 +1,4 @@
-# rpi-datasci-hum-sensor
+# rpi-datasci-hum-sensor :droplet:
 
 ## Introduction
 This repository contains all the elements involving my Data Science IoT project. I will be explaining why I chose this project, some steps I took along the way of developing this project, a short demo looking at the end product, and a tutorial to follow along. This project will be using a **Raspberry Pi 4 Model B** with the **Sense HAT V2** addon and is coded using **Python 3.9.2** alongside [ThingSpeak](https://thingspeak.com/) for data visualization and [Twilio](https://www.twilio.com/en-us) for SMS sending. 
