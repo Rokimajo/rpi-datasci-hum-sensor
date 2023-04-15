@@ -71,7 +71,7 @@ You will need:
 - A Raspberry Pi compatible with the Sense HAT addon *(All Raspberry Pi's with 40 pin connectors are compatible.)*
 - A Sense HAT
 - A [ThingSpeak](https://thingspeak.com/) Account
-- A [WeatherAPI](https://www.weatherapi.com/)
+- A [WeatherAPI](https://www.weatherapi.com/) Account
 - A [Twilio](https://www.twilio.com/en-us) Account *(Optional)*
 
 
