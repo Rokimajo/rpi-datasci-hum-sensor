@@ -17,7 +17,7 @@ ts_channelid = 0 # ThingSpeak channel ID
 
 # Twilio (Optional)
 send_sms = False # Enable whether you want to send sms messages to yourself.
-				# Set this to false if you don't have Twilio or don't want to send messages.
+		 # Keep this set to False if you don't have Twilio or don't want to send messages.
 acc_SID = "" # Your Twilio account SID
 acc_AUTH = "" # Your twilio account Auth Token
 twilio_number = +0 # Your twilio phone number, find this in account info after making a trial account.
