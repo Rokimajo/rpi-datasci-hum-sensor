@@ -32,7 +32,7 @@ First I had to know the humidity breakpoint where I would be in the "danger zone
 Now I needed some way to get my local weather data because opening my window when the humidity is even worse outside, wouldn't help at all. After looking trough a couple API's, I landed at WeatherAPI.com because they offer you 1 million calls per month with a free account. Most other API's I found gave me only around 200-300 per day, WeatherAPI would give me considerably more.
 > WeatherAPI.com: https://www.weatherapi.com/
 
-```
+```python
 def get_weather_data():
 	URL = f"http://api.weatherapi.com/v1/current.json?key={weatherAPI_key}&q={weatherAPI_city}&aqi=no"
 	response = requests.get(URL)
@@ -43,3 +43,21 @@ def get_weather_data():
 	weather_data = response.json()["current"]["humidity"]
 	return weather_data
  ```
+I had some trouble figuring out how to exactly call WeatherAPI's data, but they have their call links readily available in their API explorer, At this point I only had to swap in the variables of my own api key, and the city I wanted the data from, and then isolate the humidity in their json with ```["current"]["humidity"]```
+
+```python
+hum_breakpoint = 65 # This is the humidity (%) breakpoint
+open_window = True if local_hum >= hum_breakpoint and local_hum > city_hum else False
+```
+I wanted a nice and compact way of checking if I should open my window, from my experience with C# I knew that ternary operators might help me with this. This small code snippet checks if the humidity is equal or larger than 65%, which is the breakpoint I set earlier. It also checks if the humidity in your local space is larger than outside, because if it's not, opening your window would only worsen the effect.
+
+```python
+def send_sms():
+	from twilio.rest import Client
+	tw_client = Client(acc_SID, acc_AUTH)
+	tw_client.messages.create(body=f"The humidity in your room is above your breakpoint ({hum_breakpoint}%). Open your window whenever possible.", from_=twilio_number, to=own_number)
+	print("SMS OK!")
+```
+
+I also wanted the ability to send SMS messages if the user so wanted, so I set up a Twilio account, and installed their python package on my raspberry pi. I found out how to send SMS messages with Twilio in Python after searching around Twilio's own documentation. 
+> source: https://www.twilio.com/docs/sms/tutorials/how-to-send-sms-messages-python
