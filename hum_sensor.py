@@ -8,18 +8,18 @@ hum_breakpoint = 65 # This is the humidity (%) breakpoint
 update_interval = 300 # amount of seconds you want between posting
 
 # WeatherAPI.com
-weatherAPI_key = "" # The read key for WeatherAPI
-weatherAPI_city = "" # The city name where WeatherAPI will get your data from. i.e: "Rotterdam"
+weatherAPI_key = "key_here" # The read key for WeatherAPI
+weatherAPI_city = "city_here" # The city name where WeatherAPI will get your data from. i.e: "Rotterdam"
 
 # ThingSpeak
-ts_writekey = "" # the write key of your ThingSpeak channel
+ts_writekey = "key_here" # the write key of your ThingSpeak channel
 ts_channelid = 0 # ThingSpeak channel ID
 
 # Twilio (Optional)
 send_sms = False # Enable whether you want to send sms messages to yourself.
 		 # Keep this set to False if you don't have Twilio or don't want to send messages.
-acc_SID = "" # Your Twilio account SID
-acc_AUTH = "" # Your twilio account Auth Token
+acc_SID = "SID_here" # Your Twilio account SID
+acc_AUTH = "AUTH_here" # Your twilio account Auth Token
 twilio_number = +0 # Your twilio phone number, find this in account info after making a trial account.
 own_number = +0 # Your own number, where twilio sends the message to.
 
