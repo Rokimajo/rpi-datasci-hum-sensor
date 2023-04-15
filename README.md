@@ -67,9 +67,16 @@ For the purposes of this demo, I've set the ```update_interval``` to **15** seco
 https://user-images.githubusercontent.com/103335427/232224833-9f850fbf-bc48-4bd0-9b87-b3e02a3e3311.mp4
 
 ## Tutorial
-You will need:
-- A Raspberry Pi compatible with the Sense HAT addon *(All Raspberry Pi's with 40 pin connectors are compatible.)*
+Needed Hardware Requirements:
+- A [Raspberry Pi](https://www.raspberrypi.com/) compatible with the Sense HAT addon *(All Raspberry Pi's with 40 pin connectors are compatible.)*
+- Internet connection to connect with the API's
 - A Sense HAT
+
+Needed Software Requirements:
+- [Python](https://www.python.org/) 3.x
+- Raspberry Pi OS that can run the included python code
+
+Needed Accounts:
 - A [ThingSpeak](https://thingspeak.com/) Account
 - A [WeatherAPI](https://www.weatherapi.com/) Account
 - A [Twilio](https://www.twilio.com/en-us) Account *(Optional)*
