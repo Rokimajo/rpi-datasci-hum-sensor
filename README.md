@@ -104,7 +104,7 @@ When that's done, you're ready to create widget 4. Go back to the widget menu an
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226066-cab80ef0-36c0-43ec-94f5-bb15cb74f4a6.PNG)
 
-And enter the following settings. This will make the lamp turn on when hum_sensor.py sends ```True``` to ThingSpeak.
+And enter the following settings. This will make the lamp turn on when [hum_sensor.py sends](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) ```True``` to ThingSpeak.
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226161-5deae121-a306-4d7e-9c78-470a25ad2d85.PNG)
 
@@ -132,7 +132,7 @@ After you've made an account, make sure you're on the dashboard page:
 
 ![tempsnip](https://user-images.githubusercontent.com/103335427/232227561-58a256ee-308a-485c-95f3-132a09a1bd4a.png)
 
-As you can see the API key is right there, now simply copy your key and paste it in the right hum_sensor.py section:
+As you can see the API key is right there, now simply copy your key and paste it in the right [hum_sensor.py sends](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) section:
 ```python
 # WeatherAPI.com
 weatherAPI_key = "" # The read key for WeatherAPI
@@ -140,7 +140,7 @@ weatherAPI_city = "" # The city name where WeatherAPI will get your data from. i
 ```
 Also don't forget to enter the city you want to get the data from.
 
-Great! Now you're done. If you let hum_sensor.py run for a while, you should see something like this:
+Great! Now you're done. If you let [hum_sensor.py sends](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) run for a while, you should see something like this:
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226277-99062be6-8dc9-489a-b590-7e97ab565a01.PNG)
 
@@ -158,7 +158,7 @@ Now, make a [Twilio](https://www.twilio.com/en-us) account. After you've succesf
 
 Since this is a new account, you won't have a virtual twilio phone number like I do in this picture, You should see a button somewhere under Step 1 that allows you to quickly make one after you've verified your e-mail, when you have the green checkmark like in the picture, you're good to go.
 
-Now, take note of your following account info, because you'll need to insert these into the hum_sensor.py code:
+Now, take note of your following account info, because you'll need to insert these into the [hum_sensor.py sends](https://github.com/Rokimajo/rpi-datasci-hum-sensor/blob/main/hum_sensor.py) code:
 
 ![Capture](https://user-images.githubusercontent.com/103335427/232226780-e8e52291-d757-4a5b-a809-46f984567f58.PNG)
 
