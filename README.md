@@ -55,7 +55,7 @@ def send_sms():
 	print("SMS OK!")
 ```
 
-I also wanted the ability to send SMS messages if the user so wanted, so I set up a Twilio account, and installed their python package on my raspberry pi. I found out how to send SMS messages with Twilio in Python after searching around Twilio's own documentation[^4]. 
+I also wanted the ability to send SMS messages if the user so wanted, so I set up a [Twilio](https://www.twilio.com/en-us) account, and installed their python package on my raspberry pi. I found out how to send SMS messages with Twilio in Python after searching around Twilio's own documentation[^4]. 
 
 ## Conclusion
 Apart from a few complications which I talked about in **The Process**, the project went pretty smoothly. I never used push notifications before in a project, and using another API to grab data based on location was fun to try out. This was also the first time I used ThingSpeak to visualize the data easily, I've had a few other projects where I visualized data, but it was always using python's ```matplotlib```. ThingSpeak is alot easier to set up and modify. I think this project does a pretty good job showing you all the data, so you can make an accurate decision on whether to air out your room or not. Especially if you opt-in to use Twilio for the SMS push notifications.
