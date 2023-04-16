@@ -1,7 +1,7 @@
-# rpi-datasci-hum-sensor :droplet:
+# <h1 align="center">:droplet: rpi-datasci-hum-sensor :droplet:</h1>
 
 ## Introduction
-This repository contains all the elements involving my Data Science IoT project. The project is about measuring humidity in your local area (like a room) and getting the outside temperature with a weather API. The reason for the measurement will be to always have a healthy amount of humidity inside your area. If the humidity in your local area grows too large based on a breakpoint you choose (default: 65%), the program will light up a button on [ThingSpeak](https://thingspeak.com/) to notify you, and will also send push notifications per SMS if you opt-in for it.
+This repository contains all the elements involving my Data Science IoT project. The project is about measuring humidity in your local area (like a room) and getting the outside temperature with a weather API. The reason for the measurement will be to always have a healthy amount of humidity inside your area. If the humidity in your local area grows too large based on a breakpoint you choose (default: 65%) and is below the humidity of the chosen outside area, the program will light up a button on [ThingSpeak](https://thingspeak.com/) to notify you, and will also send push notifications per SMS if you opt-in for it.
 
 I will be explaining why I chose this project, some steps I took along the way of developing this project, a short demo looking at the end product, and a tutorial to follow along. This project will be using a **Raspberry Pi 4 Model B** with the **Sense HAT V2** addon and is coded using **Python 3.9.2** alongside [ThingSpeak](https://thingspeak.com/) for data visualization and [Twilio](https://www.twilio.com/en-us) for SMS sending. 
 
